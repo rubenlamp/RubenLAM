@@ -69,6 +69,7 @@ export default class Header extends React.Component {
     }
 
     render() {
+        console.log('Pasé por compo/Header.js');
         const image = _.get(this.props, 'image');
         const page = _.get(this.props, 'page');
         const pageUrl = _.trim(getPageUrl(page), '/');

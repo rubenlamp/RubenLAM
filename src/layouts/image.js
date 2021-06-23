@@ -22,7 +22,7 @@ export default class Image extends React.Component {
         const dateTimeAttr = moment(date).strftime('%Y-%m-%d %H:%M');
         const formattedDate = moment(date).strftime('%B %d, %Y');
         const markdownContent = _.get(page, 'markdown_content');
-
+        console.log('Pasé por layouts/image.js'); 
         return (
             <Layout page={page} config={config}>
                 {hideHeader ? <HeaderAlt />

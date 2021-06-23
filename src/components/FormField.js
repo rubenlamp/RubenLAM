@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 export default class FormField extends React.Component {
     render() {
+        console.log('Pasé por compo/FormField.js');
         const field = _.get(this.props, 'field');
         const inputType = _.get(field, 'input_type');
         const name = _.get(field, 'name');

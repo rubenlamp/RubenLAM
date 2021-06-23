@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 export default class Icon extends React.Component {
     render() {
+        console.log('Pasé por compo/Icon.js');
         const icon = _.get(this.props, 'icon');
         switch (icon) {
             case 'dev':

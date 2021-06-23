@@ -2,6 +2,7 @@ const _ = require('lodash');
 const pathPrefix = require('../../content/data/config.json').path_prefix;
 
 export default function withPrefix(url) {
+    console.log('Pasé por utils/withPrefix.js');
     if (!url) {
         return url;
     }

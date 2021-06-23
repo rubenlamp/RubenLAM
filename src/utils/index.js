@@ -8,3 +8,4 @@ export { default as pathJoin } from './pathJoin';
 export { default as markdownify } from './markdownify';
 export { default as withPrefix } from './withPrefix';
 export { default as Link } from './link';
+console.log('Pasé por utils/index.js');

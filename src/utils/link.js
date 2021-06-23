@@ -2,6 +2,7 @@ import React from 'react';
 import NextLink from 'next/link';
 
 export default function Link({ children, href, ...other }) {
+    console.log('Pasé por utils/link.js');
     // Pass Any internal link to Next.js Link, for anything else, use <a> tag
     const internal = /^\/(?!\/)/.test(href);
     if (internal) {

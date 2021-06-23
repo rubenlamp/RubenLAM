@@ -38,11 +38,14 @@ module.exports = {
                     { path: '/{__metadata.urlPath}', predicate: _.matchesProperty('__metadata.modelName', 'home') },
                     { path: '/{__metadata.urlPath}', predicate: _.matchesProperty('__metadata.modelName', 'contact') },
                     { path: '/{__metadata.urlPath}', predicate: _.matchesProperty('__metadata.modelName', 'page') },
-                    { path: '/{__metadata.urlPath}', predicate: _.matchesProperty('__metadata.modelName', 'post') }
+                    { path: '/{__metadata.urlPath}', predicate: _.matchesProperty('__metadata.modelName', 'post') },
+                    { path: '/{__metadata.urlPath}', predicate: _.matchesProperty('__metadata.modelName', 'project') },
+                    { path: '/{__metadata.urlPath}', predicate: _.matchesProperty('__metadata.modelName', 'gallery') }
                 ],
                 commonProps: {
                     pages: { predicate: _.matchesProperty('__metadata.modelType', 'page') },
                     posts: { predicate: _.matchesProperty('__metadata.modelName', 'post') },
+                    projects: { predicate: _.matchesProperty('__metadata.modelName', 'project') },
                     data: { single: true, predicate: _.matchesProperty('__metadata.id', 'sourcebit-source-filesystem:data') }
                 }
             }

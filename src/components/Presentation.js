@@ -8,7 +8,7 @@ export default class Header extends React.Component {
 }
 
   render() {
- 
+    console.log('Pasé por compo/Presentation.js');
       return (
          <div><h2>Hola</H2></div>
       );

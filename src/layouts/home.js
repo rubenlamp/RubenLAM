@@ -56,7 +56,7 @@ export default class Home extends React.Component {
         const hasMoreLink = _.get(page, 'has_more_link');
         const moreLinkText = _.get(page, 'more_link_text');
         const posts = _.orderBy(_.get(this.props, 'posts', []), 'date', 'desc');
-
+        console.log('Pasé por layouts/home.js'); 
         return (
             <Layout page={page} config={config}>
                 <Header config={config} page={page} image={headerImage} />

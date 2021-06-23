@@ -332,6 +332,32 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+  gallery:
+    type: page
+    urlPath: /gallery
+    label: Gallery
+    layout: gallery
+    exclude: posts/**
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the gallery
+        required: true
+      - type: string
+        name: subtitle
+        label: Subtitle
+        description: The text shown just below the gallery title
+      - type: image
+        name: img_path
+        label: Background Image
+        description: >-
+          The background image of the left side. If no image added, the default
+          image specified in Header Configuration is displayed.
+      - type: model
+        name: seo
+        models:
+          - stackbit_page_meta
   post:
     type: page
     urlPath: '/posts/{slug}'

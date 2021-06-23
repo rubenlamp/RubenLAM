@@ -24,6 +24,7 @@ export default class Body extends React.Component {
     }
 
     render() {
+        console.log('Pasé por compo/Layout.js');
         const page = _.get(this.props, 'page');
         const pageTitle = _.get(page, 'title');
         const config = _.get(this.props, 'config');

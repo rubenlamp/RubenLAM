@@ -6,7 +6,7 @@ import Header from './Header';
 import HeaderAlt from './HeaderAlt';
 import Layout from './Layout';
 import Icon from './Icon';
-
+console.log('Pasé por compo/Layout.js');
 export {
     Action,
     ActionIcon,

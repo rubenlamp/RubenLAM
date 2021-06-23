@@ -6,6 +6,7 @@ import { htmlToReact, Link } from '../utils';
 
 export default class Footer extends React.Component {
     render() {
+        console.log('Pasé por compo/Footer.js');
         const config = _.get(this.props, 'config');
         const footer = _.get(config, 'footer');
         const copyright = _.get(footer, 'content');
