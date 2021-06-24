@@ -1,6 +1,7 @@
+console.log('a Pasé por utils/attribute.js');
 export default function attribute(name, value, condition) {
+    console.log('b Pasé por utils/attribute.js');
     if (typeof condition === 'undefined') {
-        console.log('Pasé por utils/attribute.js');
         condition = true;
     }
     return condition ? { [name]: value } : null;

@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import HeaderAlt from '../components/HeaderAlt';
 import Footer from '../components/Footer';
 import { htmlToReact, markdownify } from '../utils';
+console.log('a Pasé por layouts/post.js');
 
 export default class Post extends React.Component {
     render() {
@@ -22,7 +23,7 @@ export default class Post extends React.Component {
         const dateTimeAttr = moment(date).strftime('%Y-%m-%d %H:%M');
         const formattedDate = moment(date).strftime('%B %d, %Y');
         const markdownContent = _.get(page, 'markdown_content');
-        console.log('Pasé por layouts/post.js');
+        console.log('b Pasé por layouts/post.js');
         return (
             <Layout page={page} config={config}>
                 {hideHeader ? <HeaderAlt />

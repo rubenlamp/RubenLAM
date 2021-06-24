@@ -1,10 +1,13 @@
 ---
-title: La galeria del perro
+title: La galeria del peggo
 subtitle: >-
   The style guide provides you with a blueprint of default post and page styles.
   The style guide is also a great reference for suggested typographic treatment
   and styles for your content.
 img_path: images/style-guide.jpg
+thumb_img_path: images/1.jpg
+thumb_img_alt: A man standing on a rock cliff overlooking a river
+content_img_path: images/1.jpg
 seo:
   title: Theme Style Guide
   description: A reference for suggested typographic treatment and styles for your content

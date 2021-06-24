@@ -1,6 +1,7 @@
+console.log('a Pasé por utils/getData.js');
 import _ from 'lodash';
 export default function getData(props, dataPath) {
-    console.log('Pasé por utils/getData.js');
+    console.log('b Pasé por utils/getData.js');
     dataPath = _.trim(dataPath, '/');
     if (_.startsWith(dataPath, 'content/data/')) {
         dataPath = dataPath.replace('content/data/', '');

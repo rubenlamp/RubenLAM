@@ -6,6 +6,7 @@ import { Layout } from '../components/index';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { getPageUrl, Link, withPrefix } from '../utils';
+console.log('a Pasé por layouts/home.js'); 
 
 export default class Home extends React.Component {
     renderPost(post, index, hasMoreLink, moreLinkText) {
@@ -56,7 +57,10 @@ export default class Home extends React.Component {
         const hasMoreLink = _.get(page, 'has_more_link');
         const moreLinkText = _.get(page, 'more_link_text');
         const posts = _.orderBy(_.get(this.props, 'posts', []), 'date', 'desc');
+        const project = _.orderBy(_.get(this.props, 'project', []), 'date', 'desc');
         console.log('Pasé por layouts/home.js'); 
+        console.log(console.log(this.props)); 
+        console.log(console.log(posts)); 
         return (
             <Layout page={page} config={config}>
                 <Header config={config} page={page} image={headerImage} />
