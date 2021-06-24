@@ -47,7 +47,9 @@ export default class Home extends React.Component {
             </article>
         );
     }
-
+    repitTreeTimes(index, posts) {
+        return (console.log('hola'));
+    }
     render() {
         const data = _.get(this.props, 'data');
         const config = _.get(data, 'config');
@@ -57,7 +59,9 @@ export default class Home extends React.Component {
         const hasMoreLink = _.get(page, 'has_more_link');
         const moreLinkText = _.get(page, 'more_link_text');
         const posts = _.orderBy(_.get(this.props, 'posts', []), 'date', 'desc');
-        const project = _.orderBy(_.get(this.props, 'project', []), 'date', 'desc');
+        const papa = _.orderBy(_.get(this.props, 'project', []), 'date', 'desc');
+        const projects = papa.splice(0,1);
+
         console.log('Pasé por layouts/home.js'); 
         console.log(console.log(this.props)); 
         console.log(console.log(posts)); 
@@ -67,7 +71,7 @@ export default class Home extends React.Component {
                 <div id="content" className="site-content">
                     <main id="main" className="site-main inner">
                         <div className="post-feed">
-                            {_.map(posts, (post, index) => this.renderPost(post, index, hasMoreLink, moreLinkText))}
+                            {_.map(projects, (post, index) => this.renderPost(post, index, hasMoreLink, moreLinkText))}
                         </div>
                     </main>
                     <Footer config={config} />
