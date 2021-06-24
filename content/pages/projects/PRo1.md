@@ -40,7 +40,7 @@ seo:
     - name: 'twitter:image'
       value: images/1.jpg
       relativeUrl: true
-layout: image
+layout: project
 ---
 
 ![Hiking](/images/2.jpg)

@@ -1,3 +1,4 @@
+console.log('a Pasé por compo/Index.js');
 import Action from './Action';
 import ActionIcon from './ActionIcon';
 import Footer from './Footer';
@@ -6,7 +7,8 @@ import Header from './Header';
 import HeaderAlt from './HeaderAlt';
 import Layout from './Layout';
 import Icon from './Icon';
-
+import Presentation from './Presentation';
+console.log('b Pasé por compo/Index.js');
 export {
     Action,
     ActionIcon,
@@ -15,7 +17,8 @@ export {
     Header,
     HeaderAlt,
     Layout,
-    Icon
+    Icon,
+    Presentation
 };
 
 export default {
@@ -26,5 +29,6 @@ export default {
     Header,
     HeaderAlt,
     Layout,
-    Icon
+    Icon,
+    Presentation
 };

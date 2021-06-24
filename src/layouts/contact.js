@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import FormField from '../components/FormField';
 import Footer from '../components/Footer';
 import { htmlToReact, markdownify } from '../utils';
+console.log('a Pasé por layouts/contact.js');
 
 export default class Contact extends React.Component {
     render() {
@@ -24,6 +25,7 @@ export default class Contact extends React.Component {
         const formHoneypotInputId = formId + '-honeypot';
         const formHoneypotLabelId = formId + '-honeypot-label';
         const formHoneypotName = formId + '-bot-field';
+        console.log('b Pasé por layouts/contact.js');
 
         return (
             <Layout page={page} config={config}>
