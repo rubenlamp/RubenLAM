@@ -3,6 +3,7 @@ title: Home
 has_more_link: true
 more_link_text: Know more
 hero_title: RubenLAM Portfolio
+hero_bg: https://i.imgur.com/kP9hUxN.jpg
 seo:
   title: RubenLAM portfolio
   description: RubenLAM Presentation page
@@ -21,7 +22,7 @@ seo:
       keyName: property
       relativeUrl: true
     - name: 'og:hero'
-      value: https://pbs.twimg.com/media/E4p0nrYUcA4T-ci?format=png&name=small
+      value: https://i.imgur.com/kP9hUxN.jpg
       keyName: property
     - name: 'twitter:card'
       value: summary_large_image

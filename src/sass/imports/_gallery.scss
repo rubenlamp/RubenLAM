@@ -20,11 +20,19 @@
     position: absolute;
     top: 0;
     color: _palette(light);
-    background-image: linear-gradient( _palette(primary), rgba(255,0,0,0));
+    border-radius: 10% 10% 50% 50%;
+    background-color: _palette(secondary);
+    transition: opacity 2s;
+    opacity: .3;
+    // background-image: linear-gradient( _palette(primary), rgba(255,0,0,0));
   }
   a {
     color: _palette(light);
   }
 
 }
-
+.portfolio-width:hover {
+  .portfolio-header {
+    opacity: .9;
+  }
+}

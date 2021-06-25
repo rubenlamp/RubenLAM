@@ -74,9 +74,9 @@ export default class Home extends React.Component {
                         <h2 className="portfolio-title">
                             <Link href={portfolioUrl}>{title}</Link>
                         </h2>
-                        <div className="portfolio-meta">
+                        {/* <div className="portfolio-meta">
                             Published on <time className="published" dateTime={dateTimeAttr}>{formattedDate}</time>
-                        </div>
+                        </div> */}
                     </header>
                 </div>
             </article>
@@ -108,12 +108,12 @@ export default class Home extends React.Component {
                 <Hero config={config} page={page} image={heroImage}/>
                 <div id="content" className="site-content">
                     <main id="main" className="site-main inner">
-                        {subtitle && <div className="site-subtitle">{htmlToReact(subtitle)}</div>}
-                        {markdownContent && <div className="site-container">{markdownify(markdownContent)}</div>}
                         <div className="post-feed gallery">
                             {_.map(papa, (post, index) => this.renderPortfolioW(post, index, hasMoreLink, moreLinkText))}
                             {/* {_.map(papa, (post, index) => this.renderPortfolioH(post, index, hasMoreLink, moreLinkText))} */}
                         </div>
+                        {subtitle && <div className="site-subtitle">{htmlToReact(subtitle)}</div>}
+                        {markdownContent && <div className="site-container">{markdownify(markdownContent)}</div>}
                     </main>
                     <Footer config={config} />
                 </div>
