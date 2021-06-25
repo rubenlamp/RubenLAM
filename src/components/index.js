@@ -8,6 +8,7 @@ import HeaderAlt from './HeaderAlt';
 import Layout from './Layout';
 import Icon from './Icon';
 import Presentation from './Presentation';
+import Hero from './Hero';
 console.log('b Pasé por compo/Index.js');
 export {
     Action,
@@ -16,6 +17,7 @@ export {
     FormField,
     Header,
     HeaderAlt,
+    Hero,
     Layout,
     Icon,
     Presentation
@@ -28,6 +30,7 @@ export default {
     FormField,
     Header,
     HeaderAlt,
+    Hero,
     Layout,
     Icon,
     Presentation

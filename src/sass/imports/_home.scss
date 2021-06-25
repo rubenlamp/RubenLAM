@@ -1,0 +1,51 @@
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.6667rem;
+  h2 {
+    width: 100%;
+  }
+  &-details {
+    width: 60%; 
+    margin-right: 10%;
+    display: inline;
+  }
+  .profile-container {
+    max-width: 200px;
+    width: 30%;
+
+    margin: 0;
+    p {
+      overflow: hidden;
+      border-radius: 10% 30%;
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (min-width:1921px) {
+  .about-me {
+    &-details {
+      width: 75%;
+      margin-right: 10%;
+    }
+    .profile-container {
+    max-width: initial;
+    width: 10%;
+    }
+  }
+}
+@media only screen and (max-width:720px) {
+  .about-me {
+    justify-content: center;
+    &-details {
+      width: 100%;
+      margin: 0;
+    }
+  .profile-container {
+    max-width: initial;
+    width: 50%;
+  }
+  }
+}
