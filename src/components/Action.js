@@ -1,3 +1,4 @@
+console.log('A Pasé por compo/Action.js');
 import React from 'react';
 import _ from 'lodash';
 
@@ -5,6 +6,7 @@ import { Link, withPrefix } from '../utils';
 
 export default class Action extends React.Component {
     render() {
+        console.log('B Pasé por compo/Action.js');
         const action = _.get(this.props, 'action');
         const url = _.get(action, 'url');
         const label = _.get(action, 'label');
