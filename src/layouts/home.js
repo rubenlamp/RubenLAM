@@ -50,6 +50,38 @@ export default class Home extends React.Component {
             </article>
         );
     }
+    renderPortfolioW(portfolio, index, hasMoreLink, moreLinkText) {
+        const title = _.get(portfolio, 'title');
+        const thumbImage = _.get(portfolio, 'thumb_img_path');
+        const thumbImageAlt = _.get(portfolio, 'thumb_img_alt', '');
+        const excerpt = _.get(portfolio, 'excerpt');
+        const date = _.get(portfolio, 'date');
+        const dateTimeAttr = moment(date).strftime('%Y-%m-%d %H:%M');
+        const formattedDate = moment(date).strftime('%B %d, %Y');
+        const portfolioUrl = getPageUrl(portfolio, { withPrefix: true });
+
+        return (
+            <article key={index} className="portfolio-width">
+                <div className="portfolio-content">
+                    {thumbImage && (
+                        <Link className="portfolio-thumbnail" href={portfolioUrl}>
+                            <div className="thumbnail-container">
+                            <img className="thumbnail" src={withPrefix(thumbImage)} alt={thumbImageAlt} />
+                            </div>
+                        </Link>
+                    )}
+                    <header className="portfolio-header">
+                        <h2 className="portfolio-title">
+                            <Link href={portfolioUrl}>{title}</Link>
+                        </h2>
+                        <div className="portfolio-meta">
+                            Published on <time className="published" dateTime={dateTimeAttr}>{formattedDate}</time>
+                        </div>
+                    </header>
+                </div>
+            </article>
+        );
+    }
 
     render() {
         const data = _.get(this.props, 'data');
@@ -63,7 +95,7 @@ export default class Home extends React.Component {
         const moreLinkText = _.get(page, 'more_link_text');
         const posts = _.orderBy(_.get(this.props, 'posts', []), 'date', 'desc');
         const projects = _.orderBy(_.get(this.props, 'projects', []), 'date', 'desc');
-        const papa = projects.splice(0,4);
+        const papa = projects.splice(0,3);
         const title = _.get(page, 'title');
         const subtitle = _.get(page, 'subtitle');
         const markdownContent = _.get(page, 'markdown_content');
@@ -79,7 +111,8 @@ export default class Home extends React.Component {
                         {subtitle && <div className="site-subtitle">{htmlToReact(subtitle)}</div>}
                         {markdownContent && <div className="site-container">{markdownify(markdownContent)}</div>}
                         <div className="post-feed gallery">
-                            {_.map(papa, (post, index) => this.renderPost(post, index, hasMoreLink, moreLinkText))}
+                            {_.map(papa, (post, index) => this.renderPortfolioW(post, index, hasMoreLink, moreLinkText))}
+                            {/* {_.map(papa, (post, index) => this.renderPortfolioH(post, index, hasMoreLink, moreLinkText))} */}
                         </div>
                     </main>
                     <Footer config={config} />

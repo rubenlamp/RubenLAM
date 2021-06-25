@@ -1,0 +1,30 @@
+
+.portfolio-width {
+  .portfolio-content{
+    height: 400px;
+
+    overflow: hidden;
+    position: relative;
+  }
+  .thumbnail-container {
+    overflow: hidden;
+  }
+  .thumbnail{
+    width: 4000px;
+    height: 400px;
+    object-fit: cover;
+    }
+  .portfolio-header {
+    margin: 2% 5%;
+    padding: 2% 2%;
+    position: absolute;
+    top: 0;
+    color: _palette(light);
+    background-image: linear-gradient( _palette(primary), rgba(255,0,0,0));
+  }
+  a {
+    color: _palette(light);
+  }
+
+}
+
