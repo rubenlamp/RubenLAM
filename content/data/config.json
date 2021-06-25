@@ -14,26 +14,6 @@
                 "label": "Home",
                 "url": "/",
                 "style": "link"
-            },
-            {
-                "label": "Gallery",
-                "url": "/about",
-                "style": "link"
-            },
-            {
-                "label": "Blog",
-                "url": "/style-guide",
-                "style": "link"
-            },
-            {
-                "label": "Contact",
-                "url": "/contact",
-                "style": "link"
-            },
-            {
-                "label":"Gallery",
-                "url": "/gallery",
-                "style": "link"
             }
         ],
         "has_social": true,
