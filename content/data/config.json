@@ -6,7 +6,7 @@
         "title": "RubenLAM",
         "tagline": "2D Concept artist",
         "logo_img": "images/logo.svg",
-        "logo_img_alt": "Fjord Logo",
+        "logo_img_alt": "RubenLAM Logo",
         "background_img": "images/header-bg.jpg",
         "has_nav": true,
         "nav_links": [
@@ -74,6 +74,9 @@
                 "new_window": true
             }
         ]
+    },
+    "hero": {
+        "background_img": "https://pbs.twimg.com/media/E4p0nrYUcA4T-ci?format=png&name=small" 
     },
     "footer": {
         "content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=fjord&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>"
