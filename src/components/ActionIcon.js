@@ -1,4 +1,3 @@
-console.log('A Pasé por compo/ActionIcon.js');
 import React from 'react';
 import _ from 'lodash';
 
@@ -7,7 +6,6 @@ import Icon from './Icon';
 
 export default class ActionIcon extends React.Component {
     render() {
-        console.log('B Pasé por compo/ActionIcon.js');
         const action = _.get(this.props, 'action');
         const url = _.get(action, 'url');
         const label = _.get(action, 'label');

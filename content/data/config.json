@@ -6,7 +6,7 @@
         "title": "RubenLAM",
         "tagline": "2D Concept artist",
         "logo_img": "images/logo.svg",
-        "logo_img_alt": "RubenLAM Logo",
+        "logo_img_alt": "Fjord Logo",
         "background_img": "images/header-bg.jpg",
         "has_nav": true,
         "nav_links": [
@@ -65,11 +65,15 @@
                 "style": "icon",
                 "icon_class": "linkedin",
                 "new_window": true
+            },
+            {
+                "label": "DEV",
+                "url": "https://www.facebook.com/100.Ruben.LAM",
+                "style": "icon",
+                "icon_class": "dev",
+                "new_window": true
             }
         ]
-    },
-    "hero": {
-        "background_img": "https://i.imgur.com/kP9hUxN.jpg?2" 
     },
     "footer": {
         "content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=fjord&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>"

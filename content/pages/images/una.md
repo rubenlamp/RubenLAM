@@ -1,5 +1,5 @@
 ---
-title: Basic Rules For Walking In The Mountains
+title: Tacos de papel de baño
 excerpt: >-
   Hiking is sometimes referred to as such. This specifically refers to difficult
   walking through dense forest, undergrowth, or bushes, where forward progress
@@ -40,7 +40,7 @@ seo:
     - name: 'twitter:image'
       value: images/1.jpg
       relativeUrl: true
-layout: post
+layout: image
 ---
 
 ![Hiking](/images/2.jpg)

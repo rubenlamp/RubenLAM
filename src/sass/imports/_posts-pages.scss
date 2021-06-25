@@ -2,7 +2,6 @@
  * Posts and Pages
  */
 .post {
-
     margin-bottom: 2.5em;
 }
 
@@ -78,27 +77,22 @@
 
 .post-feed {
     .post {
+        border-bottom: 1px dashed _palette(border);
+        padding-bottom: 0.83333em;
 
-        width: 48%;
-        border-radius: 10px;
-        overflow: hidden;
-        @include box-shadow($shadow, _palette(secondary_Light));
         &:last-child {
             border: 0;
             padding-bottom: 0;
         }
     }
-    .post-content{
-        padding: 0 5%;
-    }
+
     .post-header,
     .post-thumbnail {
-        margin-bottom: .8em;
+        margin-bottom: 1.66667em;
     }
 
     .post-title {
         font-size: 1.66667rem;
-        margin: 0;
     }
 
     .post-meta {
@@ -117,15 +111,7 @@
 
     .post-feed {
         .post {
-            padding-bottom: .8em;
-        }
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .post-feed {
-        .post {
-            width: 80%;
+            padding-bottom: 1.66667em;
         }
     }
 }

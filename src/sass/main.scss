@@ -10,7 +10,6 @@ $font: (
 $palette: (
     primary: #251433,
     secondary: #926DC3,
-    secondary_Light: lighten(#926DC3, 20%),
     meta: lighten(#251433, 23%),
     border: lighten(#251433, 38%),
     bg: lighten(#251433, 55%),
@@ -21,19 +20,13 @@ $palette: (
     accent-red: #f45a4e
 );
 
-$shadow: 5px 12px 8px 0px;
-
-
 @import 'imports/functions';
-@import 'imports/mixins';
 @import 'imports/reset';
 @import 'imports/general';
 @import 'imports/icons';
 @import 'imports/structure';
-@import 'imports/home';
 @import 'imports/header';
 @import 'imports/posts-pages';
-@import 'imports/gallery';
 @import 'imports/footer';
 @import 'imports/palettes';
 @import 'imports/banner';

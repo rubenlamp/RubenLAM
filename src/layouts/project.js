@@ -1,4 +1,4 @@
-import React from 'react';
+mport React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
 
@@ -7,7 +7,6 @@ import Header from '../components/Header';
 import HeaderAlt from '../components/HeaderAlt';
 import Footer from '../components/Footer';
 import { htmlToReact, markdownify } from '../utils';
-console.log('a Pasé por layouts/project.js');
 
 export default class Project extends React.Component {
     render() {
@@ -23,22 +22,22 @@ export default class Project extends React.Component {
         const dateTimeAttr = moment(date).strftime('%Y-%m-%d %H:%M');
         const formattedDate = moment(date).strftime('%B %d, %Y');
         const markdownContent = _.get(page, 'markdown_content');
-        console.log('b Pasé por layouts/project.js');
+
         return (
             <Layout page={page} config={config}>
                 {hideHeader ? <HeaderAlt />
                     : <Header config={config} page={page} image={headerImage} />}
                 <div id="content" className="site-content">
                     <main id="main" className="site-main inner">
-                        <article className="project project-full">
-                            <header className="project-header">
-                                <h1 className="project-title">{title}</h1>
-                                <div className="project-meta">
+                        <article className="post post-full">
+                            <header className="post-header">
+                                <h1 className="post-title">{title}</h1>
+                                <div className="post-meta">
                                     Published on <time className="published" dateTime={dateTimeAttr}>{formattedDate}</time>
                                 </div>
                             </header>
-                            {subtitle && <div className="project-subtitle">{htmlToReact(subtitle)}</div>}
-                            {markdownContent && <div className="project-content">{markdownify(markdownContent)}</div>}
+                            {subtitle && <div className="post-subtitle">{htmlToReact(subtitle)}</div>}
+                            {markdownContent && <div className="post-content">{markdownify(markdownContent)}</div>}
                         </article>
                     </main>
                     <Footer config={config} />
