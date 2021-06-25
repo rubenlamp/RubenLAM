@@ -56,3 +56,4 @@
 @function _palette($keys...) {
     @return val($palette, $keys...);
 }
+

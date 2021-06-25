@@ -3,10 +3,10 @@ import ReactHtmlParser, { convertNodeToElement } from 'react-html-parser';
 import ScriptTag from 'react-script-tag';
 import Link from './link';
 import _ from 'lodash';
-
+console.log('a Pasé por utils/htmlToReact.js');
 const convertChildren = (children, index) => _.map(children, (childNode) => convertNodeToElement(childNode, index, _.noop()));
-
 export default function htmlToReact(html) {
+    console.log('b Pasé por utils/htmlToReact.js');
     if (!html) {
         return null;
     }
