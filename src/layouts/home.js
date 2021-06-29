@@ -112,6 +112,11 @@ export default class Home extends React.Component {
                             {_.map(papa, (post, index) => this.renderPortfolioW(post, index, hasMoreLink, moreLinkText))}
                             {/* {_.map(papa, (post, index) => this.renderPortfolioH(post, index, hasMoreLink, moreLinkText))} */}
                         </div>
+                        <button className="portfolio-more" >
+                        <a className="portfolio-mor" href="https://www.behance.net/rubnamartne">
+                        see more
+                        </a>
+                        </button>
                         {subtitle && <div className="site-subtitle">{htmlToReact(subtitle)}</div>}
                         {markdownContent && <div className="site-container">{markdownify(markdownContent)}</div>}
                     </main>
