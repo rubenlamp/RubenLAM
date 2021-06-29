@@ -53,7 +53,7 @@ My passion is make interactive content.
 </div>
 <div class="profile-container">
 
-![Image of Yaktocat](https://i.imgur.com/wCeYtDE.jpg)</div>
+![Ruben Profile](https://i.imgur.com/wCeYtDE.jpg)</div>
 
 **I’d like to be part of a studio to aport and help creating content of value.**
 </div>
