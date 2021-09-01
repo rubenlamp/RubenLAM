@@ -5,7 +5,7 @@ import _ from 'lodash';
 import { getPageUrl, classNames, Link, withPrefix } from '../utils';
 import Action from './Action';
 import ActionIcon from './ActionIcon';
-console.log('a Pasé por compo/Hero.js');
+//console.log('a Pasé por compo/Hero.js');
 
 export default class Hero extends React.Component {
     constructor(props) {
@@ -70,8 +70,8 @@ export default class Hero extends React.Component {
     }
 
     render() {
-        console.log('b Pasé por compo/Header.js');
-        console.log(this.props);
+        //console.log('b Pasé por compo/Header.js');
+
         const image = _.get(this.props, 'image');
         const page = _.get(this.props, 'page');
         const pageUrl = _.trim(getPageUrl(page), '/');

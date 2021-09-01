@@ -3,11 +3,11 @@ import _ from 'lodash';
 
 import Action from './Action';
 import { htmlToReact, Link } from '../utils';
-console.log('a Pasé por compo/Footer.js');
+//console.log('a Pasé por compo/Footer.js');
 
 export default class Footer extends React.Component {
     render() {
-        console.log('b Pasé por compo/Footer.js');
+        //console.log('b Pasé por compo/Footer.js');
         const config = _.get(this.props, 'config');
         const footer = _.get(config, 'footer');
         const copyright = _.get(footer, 'content');

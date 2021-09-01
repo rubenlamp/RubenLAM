@@ -7,10 +7,10 @@ import _ from 'lodash';
  * @param {string} urlPath The url path to find the page by
  * @return {Object}
  */
-console.log('a Pasé por utils/getPage.js');
+//console.log('a Pasé por utils/getPage.js');
 
 export default function getPage(pages, urlPath) {
-    console.log('b Pasé por utils/getPage.js');
+    //console.log('b Pasé por utils/getPage.js');
     urlPath = _.trim(urlPath, '/');
     return _.find(pages, (page) => {
         const pageUrlPath = _.trim(_.get(page, '__metadata.urlPath'), '/');

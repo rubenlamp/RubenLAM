@@ -1,7 +1,7 @@
 const _ = require('lodash');
 
 const isDev = process.env.NODE_ENV === 'development';
-console.log('a pasé por sourcebit.js')
+//console.log('a pasé por sourcebit.js')
 
 module.exports = {
     plugins: [
@@ -14,7 +14,7 @@ module.exports = {
         // flatten all frontmatter and markdown data
         ({ data }) => {
             const objects = data.objects.map(object => {
-                console.log('b pasé por sourcebit.js');
+                //console.log('b pasé por sourcebit.js');
                 if (_.has(object, 'frontmatter')) {
                     return {
                         __metadata: object.__metadata,

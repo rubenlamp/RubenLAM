@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { Helmet } from 'react-helmet';
 import { withPrefix } from '../utils';
-console.log('a Pasé por pages/_document.js');
+//console.log('a Pasé por pages/_document.js');
 
 export default class MyDocument extends Document {
     static async getInitialProps(ctx) {
@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
     }
 
     render() {
-        console.log('b Pasé por pages/_document.js');
+        //console.log('b Pasé por pages/_document.js');
         // if you don't like Helmet but you still want to set properties on body use this
         // const pageProps = _.get(this.props, '__NEXT_DATA__.props.pageProps');
         return (

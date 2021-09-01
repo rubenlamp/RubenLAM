@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import HeaderAlt from '../components/HeaderAlt';
 import Footer from '../components/Footer';
 import { htmlToReact, markdownify } from '../utils';
-console.log('a Pasé por layouts/project.js');
+//console.log('a Pasé por layouts/project.js');
 
 export default class Project extends React.Component {
     render() {
@@ -23,7 +23,7 @@ export default class Project extends React.Component {
         const dateTimeAttr = moment(date).strftime('%Y-%m-%d %H:%M');
         const formattedDate = moment(date).strftime('%B %d, %Y');
         const markdownContent = _.get(page, 'markdown_content');
-        console.log('b Pasé por layouts/project.js');
+        //console.log('b Pasé por layouts/project.js');
         return (
             <Layout page={page} config={config}>
                 {hideHeader ? <HeaderAlt />

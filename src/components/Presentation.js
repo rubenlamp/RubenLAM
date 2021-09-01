@@ -1,10 +1,10 @@
 import React from 'react';
 import _ from 'lodash';
-console.log('a Pasé por compo/Presentation.js');
+//console.log('a Pasé por compo/Presentation.js');
 
 export default class Presentation extends React.Component {
     render() {
-        console.log('b Pasé por compo/Presentation.js');
+        //console.log('b Pasé por compo/Presentation.js');
         const field = _.get(this.props, 'field');
         const inputType = _.get(field, 'input_type');
         const name = _.get(field, 'name');

@@ -454,6 +454,54 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+  blog:
+    type: page
+    urlPath: '/blog/{slug}'
+    label: Blog
+    layout: blog
+    folder: blog
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the post
+        required: true
+      - type: string
+        name: subtitle
+        label: Subtitle
+        description: The text shown just below the post title
+      - type: date
+        name: date
+        label: Date
+        required: true
+      - type: image
+        name: thumb_img_path
+        label: Image (Blog Feed)
+        description: The image shown in the blog feed
+      - type: string
+        name: thumb_img_alt
+        label: Image Alt Text (Blog Feed)
+        description: The alt text of the blog feed image
+      - type: image
+        name: content_img_path
+        label: Background Image (Single Post)
+        description: >-
+          The background image of the left side in the single post. If no image
+          added, the default image specified in Header Configuration is
+          displayed.
+      - type: string
+        name: excerpt
+        label: Excerpt
+        description: The excerpt of the post displayed in the blog feed
+      - type: boolean
+        name: hide_header
+        label: Hide sidebar
+        description: Hide the left side in the single post
+        default: false
+      - type: model
+        name: seo
+        models:
+          - stackbit_page_meta          
   action:
     type: object
     label: Action

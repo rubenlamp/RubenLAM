@@ -1,4 +1,4 @@
-console.log('a Pasé por compo/Index.js');
+//console.log('a Pasé por compo/Index.js');
 import Action from './Action';
 import ActionIcon from './ActionIcon';
 import Footer from './Footer';
@@ -9,7 +9,7 @@ import Layout from './Layout';
 import Icon from './Icon';
 import Presentation from './Presentation';
 import Hero from './Hero';
-console.log('b Pasé por compo/Index.js');
+//console.log('b Pasé por compo/Index.js');
 export {
     Action,
     ActionIcon,

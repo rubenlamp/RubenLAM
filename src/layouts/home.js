@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import { getPageUrl, Link, withPrefix, htmlToReact, markdownify } from '../utils';
-console.log('a Pasé por layouts/home.js'); 
+
 
 export default class Home extends React.Component {
     renderPost(post, index, hasMoreLink, moreLinkText) {
@@ -95,13 +95,14 @@ export default class Home extends React.Component {
         const moreLinkText = _.get(page, 'more_link_text');
         const posts = _.orderBy(_.get(this.props, 'posts', []), 'date', 'desc');
         const projects = _.orderBy(_.get(this.props, 'projects', []), 'date', 'desc');
+        const blogs = _.orderBy(_.get(this.props, 'blog', []), 'date', 'desc');
         const papa = projects.splice(0,3);
         const title = _.get(page, 'title');
         const subtitle = _.get(page, 'subtitle');
         const markdownContent = _.get(page, 'markdown_content');
+        console.log(this.props); 
+        //console.log('Pasé por layouts/home.js'); 
 
-        console.log('Pasé por layouts/home.js'); 
-        console.log(console.log(this.props));  
         return (
             <Layout page={page} config={config}>
                 <Header config={config} page={page} image={headerImage} />
