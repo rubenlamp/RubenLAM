@@ -2,12 +2,12 @@ import React from 'react';
 import _ from 'lodash';
 import { sourcebitDataClient } from 'sourcebit-target-next';
 import { withRemoteDataUpdates } from 'sourcebit-target-next/with-remote-data-updates';
-//console.log('a Pasé por pages/...slug.js');
-
+//console.log('Pasé por pages/...slug.js, estoy en pageLayouts');
 import pageLayouts from '../layouts';
+
 class Page extends React.Component {
     render() {
-        //console.log('b Pasé por pages/...slug.js');
+        //console.log('Pasé por pages/...slug.js, estoy en page');
         const modelName = _.get(this.props, 'page.__metadata.modelName');
         const PageLayout = pageLayouts[modelName];
         if (!PageLayout) {

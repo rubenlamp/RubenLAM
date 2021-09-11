@@ -2,6 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
 
+//console.log('a Pasé por layout/image.js');
 import { Layout } from '../components/index';
 import Header from '../components/Header';
 import HeaderAlt from '../components/HeaderAlt';

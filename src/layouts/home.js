@@ -1,3 +1,4 @@
+//console.log('a Pasé por layout/home.js');
 import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
@@ -100,8 +101,8 @@ export default class Home extends React.Component {
         const title = _.get(page, 'title');
         const subtitle = _.get(page, 'subtitle');
         const markdownContent = _.get(page, 'markdown_content');
-        console.log(this.props); 
-        //console.log('Pasé por layouts/home.js'); 
+        // console.log(this.props); 
+        ////console.log('Pasé por layouts/home.js'); 
 
         return (
             <Layout page={page} config={config}>

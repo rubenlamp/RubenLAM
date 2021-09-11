@@ -17,12 +17,12 @@
             },
             {
                 "label": "Blog",
-                "url": "/gallery",
+                "url": "/blog",
                 "style": "link"
             },
             {
-                "label": "Working",
-                "url": "/blog/bitacora-ng/index",
+                "label": "Gallery",
+                "url": "/gallery",
                 "style": "link"
             }
 

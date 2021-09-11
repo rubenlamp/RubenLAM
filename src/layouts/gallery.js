@@ -1,3 +1,4 @@
+//console.log('a Pasé por layout/gallery.js');
 import React from 'react';
 import _ from 'lodash';
 
@@ -5,7 +6,6 @@ import { Layout } from '../components/index';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { htmlToReact, markdownify } from '../utils';
-//console.log('a Pasé por layout/gallery.js');
 export default class Gallery extends React.Component {
     render() {
         const data = _.get(this.props, 'data');
@@ -16,7 +16,7 @@ export default class Gallery extends React.Component {
         const subtitle = _.get(page, 'subtitle');
         const headerImage = _.get(page, 'img_path') ? _.get(page, 'img_path') : _.get(header, 'background_img');
         const markdownContent = _.get(page, 'markdown_content');
-        //console.log('b Pasé por layouts/gallery.js');
+        ////console.log('b Pasé por layouts/gallery.js');
         return (
             <Layout page={page} config={config}>
                 <Header config={config} page={page} image={headerImage} />

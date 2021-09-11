@@ -5,9 +5,9 @@ import _ from 'lodash';
 import { getPageUrl, classNames, Link, withPrefix } from '../utils';
 import Action from './Action';
 import ActionIcon from './ActionIcon';
-////console.log('a Pasé por compo/Hero.js');
+////console.log('a Pasé por compo/HeaderAlt.js');
 
-export default class Hero extends React.Component {
+export default class HeaderTop extends React.Component {
     constructor(props) {
         super(props);
         this.handleWindowResize = this.handleWindowResize.bind(this);
@@ -68,17 +68,13 @@ export default class Hero extends React.Component {
             </div>
         );
     }
-
     render() {
-        ////console.log('b Pasé por compo/Header.js');
-
+        ////console.log('b Pasé por compo/HeaderAlt.js');
         const image = _.get(this.props, 'image');
         const page = _.get(this.props, 'page');
         const pageUrl = _.trim(getPageUrl(page), '/');
         const pageLayout = _.get(page, 'layout');
         const config = _.get(this.props, 'config');
-        const hero = _.get(config, 'hero');
-        const heroTitle = _.get(page, 'hero_title');
         const header = _.get(config, 'header');
         const logo = _.get(header, 'logo_img');
         const logoAlt = _.get(header, 'logo_img_alt', '');
@@ -90,21 +86,27 @@ export default class Hero extends React.Component {
         const socialLinks = _.get(header, 'social_links');
 
         return (
-            <section className="site-hero">
+            <header className="site-header-top">
                 {image && (
-                    <div className="site-hero-bg">
-                        <img src={withPrefix(image)} className="site-hero-bg-img" alt="" />
+                    <div className="site-header-top-bg">
+                        <img src={withPrefix(image)} className="site-header-top-bg-img" alt="" />
+                        <div className="site-header-top-bg-gradient" />
                     </div>
                 )}
-                {heroTitle && (
-                      <h1 className="site-hero-title">{heroTitle}</h1>
-                )}
-                        <div className="site-header-vertical">
-                            {/* {((hasNav && !_.isEmpty(navLinks)) || (hasSocial && !_.isEmpty(socialLinks))) && (
+                <div className="site-header-top-scroll">
+                    <div className="site-header-top-inside">
+                        <div className="site-header-top-vertical">
+                            <div className="site-branding-top">
+                                {logo && <p className="site-logo"><Link href={withPrefix('/')}><img src={withPrefix(logo)} alt={logoAlt} /></Link></p>}
+                                {pageLayout === 'home' ? <h1 className="site-title"><Link href={withPrefix('/')}>{title}</Link></h1>
+                                    : <p className="site-title"><Link href={withPrefix('/')}>{title}</Link></p>}
+                                {tagline && <p className="site-description">{tagline}</p>}
+                            </div>
+                            {((hasNav && !_.isEmpty(navLinks)) || (hasSocial && !_.isEmpty(socialLinks))) && (
                                 <React.Fragment>
-                                    <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
+                                    <nav id="main-navigation" className="site-navigation-top" aria-label="Main Navigation">
                                         <div className="site-nav-wrap">
-                                            <div className="site-nav-inside">
+                                            <div className="site-nav-top-inside">
                                                 {hasNav && !_.isEmpty(navLinks) && this.renderNavLinks(navLinks, pageUrl)}
                                                 {hasSocial && !_.isEmpty(socialLinks) && this.renderSocialLinks(socialLinks)}
                                             </div>
@@ -115,10 +117,12 @@ export default class Hero extends React.Component {
                                         <span className="icon-menu" aria-hidden="true" />
                                     </button>
                                 </React.Fragment>
-                            )} */}
+                            )}
                         </div>
-
-            </section>
+                    </div>
+                </div>
+            </header>
         );
     }
 }
+

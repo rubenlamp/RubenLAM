@@ -1,13 +1,15 @@
 /**
  * Site Header
  */
-.site-header {
+.site-header,
+.site-header-top {
     background: _palette(secondary);
     color: _palette(light);
     position: relative;
 }
 
-.site-header-bg {
+.site-header-bg,
+.site-header-top-bg {
     bottom: 0;
     left: 0;
     position: absolute;
@@ -15,7 +17,8 @@
     top: 0;
 }
 
-.site-header-bg-gradient {
+.site-header-bg-gradient,
+.site-header-top-bg-gradient {
     background: -moz-linear-gradient(top, rgba(17, 17, 17, 0) 0, rgba(17, 17, 17, 0.01) 1%, rgba(17, 17, 17, 0.7) 70%, rgba(17, 17, 17, 0.9) 100%);
     background: -webkit-linear-gradient(top, rgba(17, 17, 17, 0) 0, rgba(17, 17, 17, 0.01) 1%, rgba(17, 17, 17, 0.7) 70%, rgba(17, 17, 17, 0.9) 100%);
     background: linear-gradient(to bottom, rgba(17, 17, 17, 0) 0, rgba(17, 17, 17, 0.01) 1%, rgba(17, 17, 17, 0.7) 70%, rgba(17, 17, 17, 0.9) 100%);
@@ -26,7 +29,8 @@
     top: 0;
 }
 
-.site-header-bg-img {
+.site-header-bg-img,
+.site-header-top-bg-img {
     height: 100%;
     left: 0;
     -o-object-fit: cover;
@@ -37,7 +41,8 @@
     width: 100%;
 }
 
-.site-header-inside {
+.site-header-inside,
+.site-header-top-inside {
     box-sizing: border-box;
     padding: 3.33333em 4vw;
     position: relative;
@@ -173,7 +178,11 @@
         top: 0;
         width: 30vw;
     }
-
+    .site-header-top {
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
     .site-header-scroll {
         height: 100%;
         overflow: auto;
@@ -186,25 +195,46 @@
         height: 100%;
         width: 100%;
     }
+    .site-header-top-inside {
+        display: inline-block;
+        height: 100%;
+        width: 100%; 
+        padding: 1em 4vw;
+        .menu {
+            display: flex;
 
+            .menu-item {
+                margin-right: 2vw;
+                margin-left: 2vw;
+            }
+        }
+        .social-links {
+            margin-top: 0;
+            justify-content: center;
+        }
+    }
     .site-header-vertical {
         display: table-cell;
         height: 100%;
         vertical-align: bottom;
     }
-
+    .site-header-top-vertical {
+        display: flex;
+        justify-content: space-between;
+    }
     .site-branding {
         margin: auto auto 0;
         max-width: 280px;
         width: 100%;
     }
-
+    .site-branding-top {
+        display: inline-block;
+    }
     .site-logo {
         img {
             max-height: 120px;
         }
     }
-
     #menu-toggle {
         display: none;
     }
@@ -231,7 +261,10 @@
     .site-header-alt {
         width: 450px;
     }
-
+    .site-header-top-inside{
+        max-width: 1600px;
+        margin: 0 auto;
+    }
     .site-header-inside {
         padding-left: 60px;
         padding-right: 60px;
@@ -245,7 +278,9 @@
         font-size: 1.11111rem;
     }
 }
-
+@media only screen and (min-width: 2560px) {
+    
+}
 @media only screen and (max-width: 800px) {
     .site-navigation {
         background: _palette(secondary);
@@ -261,7 +296,20 @@
         width: 100%;
         z-index: 9998;
     }
-
+    .site-navigation-top {
+        background: _palette(secondary);
+        box-sizing: border-box;
+        height: 100vh;
+        -webkit-overflow-scrolling: touch;
+        position: absolute;
+        right: -100%;
+        top: 0;
+        -webkit-transition: right 0.3s, visibility 0s 0.3s;
+        transition: right 0.3s, visibility 0s 0.3s;
+        visibility: hidden;
+        width: 100%;
+        z-index: 9998;
+    }
     .site-nav-scroll {
         height: 100%;
         overflow: auto;
@@ -272,7 +320,9 @@
     .site-nav-inside {
         padding: 7.5em 4vw 2.5em;
     }
-
+    .site-nav-top-inside {
+        padding: 7.5em 4vw 2.5em;
+    }
     .menu-item {
         padding: 0;
 
@@ -296,6 +346,12 @@
         }
 
         .site-navigation {
+            right: 0;
+            -webkit-transition: right 0.3s ease-in-out;
+            transition: right 0.3s ease-in-out;
+            visibility: visible;
+        }
+        .site-navigation-top {
             right: 0;
             -webkit-transition: right 0.3s ease-in-out;
             transition: right 0.3s ease-in-out;

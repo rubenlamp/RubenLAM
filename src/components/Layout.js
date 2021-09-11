@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import _ from 'lodash';
 
 import { withPrefix, classNames } from '../utils';
-//console.log('a Pasé por compo/Layout.js');
+////console.log('a Pasé por compo/Layout.js');
 
 export default class Body extends React.Component {
     constructor(props) {
@@ -25,7 +25,7 @@ export default class Body extends React.Component {
     }
 
     render() {
-        //console.log('b Pasé por compo/Layout.js');
+        ////console.log('b Pasé por compo/Layout.js');
         const page = _.get(this.props, 'page');
         const pageTitle = _.get(page, 'title');
         const config = _.get(this.props, 'config');

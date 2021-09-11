@@ -19,6 +19,7 @@ pageData:
       - '[2]'
       - '[2].fields.title'
       - '[2].fields.excerpt'
+      - '[2].fields.main_root'
 sourceMapping:
   - source:
       fieldPath: author.name
@@ -311,7 +312,7 @@ models:
     type: page
     label: Page
     layout: page
-    exclude: posts/**
+    exclude: blog/**
     fields:
       - type: string
         name: title
@@ -397,6 +398,10 @@ models:
         name: excerpt
         label: Excerpt
         description: The excerpt of the post displayed in the blog feed
+      - type: string
+        name: main_root
+        label: Main_root
+        description: The main root is where the All articles link points
       - type: boolean
         name: hide_header
         label: Hide sidebar
@@ -493,6 +498,10 @@ models:
         name: excerpt
         label: Excerpt
         description: The excerpt of the post displayed in the blog feed
+      - type: string
+        name: main_root
+        label: Main_root
+        description: The main root is where the All articles link points
       - type: boolean
         name: hide_header
         label: Hide sidebar
