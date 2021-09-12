@@ -43,21 +43,19 @@ seo:
       relativeUrl: true
 layout: page
 ---
-Bienvenido a mi blog. Aquí tengo todo aquello que prefiero expresar en texto. 
+<div class="site-section" >
 
+Bienvenido a mi blog. Aquí tengo todo aquello que prefiero expresar en texto. 
 ## Secciones
 
 Como una persona que claramente maneja bien sus tiempos(*Tos seca). He podido estar en en varios espacios muy especiales. 
 
-**Orden sin nada especial**
+*No hay ningún orden especial*
 
-<ul>
-  <li>
 
-  ### [Taller Maquetación Guión Novela gráfica FAD UNAM](/taller-novelagrafica) Por La Maestra [Anabell Chino]()
+  + ##### [Taller Maquetación Guión Novela gráfica FAD UNAM](/taller-novelagrafica) Por La Maestra [Anabell Chino]()
 
-  </li>
+  + ##### Videjuegos [Leche de chocolate]()
+ 
 
-  +  Videjuego 
-
-</ul>
+<div>

@@ -53,11 +53,7 @@
 
 .site-section{
   h2 {
-    padding: .1rem 0;
-    padding-left: 3%;
-    border-radius: 2%;
-    color: _palette(light);
-    background-color: _palette(secondary);
+    
   }
 }
 
@@ -65,6 +61,6 @@
 
   margin: 2% 40% 10%;
   padding: 2% 5%;
-  border-radius: 5%;
+  border-radius: .5em;
   text-decoration: none;
 }

@@ -41,21 +41,22 @@ layout: home
 ## About me
   
 <div class="about-me-details">
+
 Nice to meet you.
 
 My name is Ruben Azael Martinez Lozada.
   
-
 I am a **2D Concept artist in the Entreteiment industry.**
 My work is defined by the love of light and the interaction of the people in their enviorement.
 
 My passion is make interactive content.
+
+**I’d like to be part of a studio to aport and help creating content of value.**
+
 </div>
 <div class="profile-container">
 
 ![Ruben Profile](https://i.imgur.com/wCeYtDE.jpg)</div>
-
-**I’d like to be part of a studio to aport and help creating content of value.**
 </div>
 
 <div class="site-section contact-me">

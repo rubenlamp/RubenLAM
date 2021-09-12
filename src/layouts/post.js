@@ -39,7 +39,7 @@ export default class Post extends React.Component {
                                 </div>
                             </header>
                             {subtitle && <div className="post-subtitle">{htmlToReact(subtitle)}</div>}
-                            {markdownContent && <div className="post-content">{markdownify(markdownContent)}</div>}
+                            {markdownContent && <div className="site-section post-content">{markdownify(markdownContent)}</div>}
                         </article>
                     </main>
                     <Footer config={config} />

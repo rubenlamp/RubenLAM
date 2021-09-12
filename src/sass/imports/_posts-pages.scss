@@ -46,7 +46,17 @@
 }
 
 .post-content {
-    max-width: 750px;
+    max-width: 1200px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p, 
+    strong {
+        padding-right: 20%;
+    }
 
     iframe[src*="vimeo.com"],
     iframe[src*="youtube.com"] {
@@ -127,5 +137,18 @@
         .post {
             width: 80%;
         }
+    }
+    .post-content {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p, 
+        strong {
+            padding-right: 5%;
+        }
+    
     }
 }

@@ -46,8 +46,24 @@
     }
 }
 .site-section {
-    padding: 0 4vw;
+    h2 {
+        padding-left: .5em;
+        border-radius: 2%;
+        color: _palette(light);
+        background-color: _palette(secondary);
+    }
+    p {
+        padding-left: 2em;
+    }
+    ul,
+    ol {
+        padding-left: 2em;
+        p {
+            padding-left: initial;
+        }
+    }
 }
+
 .site-hero {
     width: auto;
     max-height: 500px;
@@ -82,4 +98,19 @@
     -ms-flex-positive: 1;
     flex-grow: 1;
     padding-bottom: 1.66667em;
+
+    a {
+        color: _palette(accent);
+        &:hover {
+            border-color: currentColor;
+            color: _palette(meta);
+            text-decoration: none;
+        }
+        &.more {
+            color: _palette(light);
+        }
+        &.more:hover {
+            color: _palette(secondary);
+        }
+    }
 }
